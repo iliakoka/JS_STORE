@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Beats studio 3",
+      "price": 19.99,
+      "description": "Beats Studio Pro - Premium Wireless Noise Cancelling Headphones",
+      "image": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/pdp/product-carousel/black/pc-studiopro-black-thrqtr-right.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sony WH-1000XM4",
+      "price": 29.99,
+      "description": "Sony WH-1000XM4 Wireless Industry Leading Noise Canceling Overhead Headphones with Mic for Phone-Call and Alexa Voice Control, Black",
+      "image": "https://iplus.com.ge/images/detailed/7/61_btxzpfDL.jpg"
+    },
+    {
+      "name": "Apple Airpods Pro",
+      "price": 250,
+      "description": "Apple airpods pro headphones for apple users ",
+      "image": "https://iplus.com.ge/images/detailed/6/WWUN_AirPodsPro-2Gen_Q422_PDP_Image_Position-1.jpg",
+      "id": 5
+    },
+    {
+      "name": "Apple Airpods Max",
+      "price": 899,
+      "description": "Apple airpods pro headphones for apple users",
+      "image": "https://cdn1.it4profit.com/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/q:100/plain/s3://catalog-products/201209061733817462/201209150027130397.png@jpeg",
+      "id": 6
+    },
+    {
+      "name": "Playstation 5",
+      "price": 799,
+      "description": "Best gaming console for gamers",
+      "image": "https://s3.zoommer.ge/zoommer-images/thumbs/0190809_sony-playstation-ps5-825gb_550.jpeg",
+      "id": 7
+    },
+    {
+      "name": "iPhone 15 pro max",
+      "price": 1299,
+      "description": "The best existing SmartPhone on the planet",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOhteorDha3Tqtqs5PLwYoiP9HUOeARnRZqnupx-XdShSEd62fp5KFBVbUYt1qQI46vss&usqp=CAU",
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.cart-list {
+  display: none;
+  padding: 1rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 4rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.header .cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.material-symbols-outlined:active {
+  font-size: 2.3rem;
+}
+
+#product-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#product-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  width: 80%;
+  transition: 300ms;
+}
+
+#product-list li:hover {
+  width: 82%;
+}
+
+#product-list li strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#product-list li p {
+  color: #666;
+}
+
+#product-list .delte-button,
+#product-list .edit-button,
+#product-list .addToCart-button,
+#product-form #submitButton,
+#product-form #editButton {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  touch-action: manipulation;
+  margin-top: 0.8rem;
+}
+
+#product-list .addToCart-button:hover,
+#product-list .edit-button:hover,
+#product-list .delte-button:hover,
+#product-form #submitButton:hover,
+#product-form #editButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#product-list .addToCart-button:focus,
+#product-list .edit-button:focus,
+#product-list .delte-button:focus,
+#product-form #submitButton:focus,
+#product-form #editButton:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#product-list .addToCart-button:active,
+#product-list .edit-button:active,
+#product-list .delte-button:active,
+#product-form #submitButton:active,
+#product-form #editButton:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#product-list .image {
+  width: 20%;
+  height: 20%;
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+#product-form {
+  width: 45%;
+  margin: 1rem auto;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#product-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"] {
+  width: calc(100% - 1.5rem);
+  border: 0;
+  border-bottom: 2px solid #8ec5fc;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#product-form button:hover {
+  background-color: #0056b3;
+}
+
+#editButton,
+#edit-title {
+  display: none;
+}
+
+.cart-item {
+  list-style-type: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-image {
+  width: 3rem;
+  height: 3rem;
+}
+
+.cart-delete-button {
+  border: none;
+  background: none;
+  text-align: center;
+}
